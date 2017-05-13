@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/pozycja1"
+          android:title="Zwiększ rozmiar tekstu"/>
+    <item android:id="@+id/pozycja2"
+          android:title="Odwróć kolor tekstu"/>
+    <item android:id="@+id/pozycja3"
+          android:title="Manipuluj pogrubieniem"/>
+    <item
+            android:visible="true" android:id="@+id/sm"
+            android:titleCondensed="SUBMENU"
+            android:title="Submenu"
+            android:enabled="true">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                    android:id="@+id/pozycja21"
+                    android:title="Odwróć kolor tła"/>
+            <item
+                    android:id="@+id/pozycja22"
+                    android:title="Rozjaśnij kolor tła"/>
+            <item
+                    android:id="@+id/pozycja23"
+                    android:title="Przyciemnij kolor tła"/>
+        </menu>
+    </item>
+</menu>
