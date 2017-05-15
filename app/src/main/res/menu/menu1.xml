@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/pozycja1"
-          android:title="Zwiększ rozmiar tekstu"/>
+          android:icon="@android:drawable/ic_menu_more"
+          android:title="Duży tekst"/>
     <item android:id="@+id/pozycja2"
-          android:title="Odwróć kolor tekstu"/>
+          android:title="Średni tekst"/>
     <item android:id="@+id/pozycja3"
-          android:title="Manipuluj pogrubieniem"/>
+          android:title="Mały tekst"/>
     <item
             android:visible="true" android:id="@+id/sm"
             android:titleCondensed="SUBMENU"
@@ -14,13 +15,13 @@
         <menu xmlns:android="http://schemas.android.com/apk/res/android">
             <item
                     android:id="@+id/pozycja21"
-                    android:title="Odwróć kolor tła"/>
+                    android:title="Czerwony"/>
             <item
                     android:id="@+id/pozycja22"
-                    android:title="Rozjaśnij kolor tła"/>
+                    android:title="Zielony"/>
             <item
                     android:id="@+id/pozycja23"
-                    android:title="Przyciemnij kolor tła"/>
+                    android:title="Niebieski"/>
         </menu>
     </item>
 </menu>

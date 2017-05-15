@@ -13,19 +13,26 @@
         tools:context="com.example.bkmiecik.android5.FirstActivity">
 
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:text="Hello World!"
+            android:id="@+id/t1"
             android:layout_margin="40dp"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"/>
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trololo"
+            android:id="@+id/t2"
             android:layout_gravity="center"
             android:layout_margin="40dp"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"/>
 </LinearLayout>
