@@ -45,14 +45,18 @@ public class FirstActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         if(v.getId()==R.id.t1){
-            menu.add(0,11,0,"Małe");
-            menu.add(0,12,1,"Normalne");
-            menu.add(0,13,2,"Wielkie");
+            menu.setHeaderIcon(android.R.drawable.ic_dialog_info);
+            menu.setHeaderTitle("Wielkość liter");
+            menu.add(0,11,0,"Małe").setIcon(android.R.drawable.ic_media_play);
+            menu.add(0,12,1,"Normalne").setIcon(android.R.drawable.ic_menu_crop);
+            menu.add(0,13,2,"Wielkie").setIcon(android.R.drawable.ic_media_ff);
         }
         else if(v.getId()==R.id.t2){
-            menu.add(1,21,0,"Małe");
-            menu.add(1,22,1,"Normalne");
-            menu.add(1,23,2,"Wielkie");
+            menu.setHeaderIcon(android.R.drawable.ic_menu_week);
+            menu.setHeaderTitle("Ustaw tło");
+            menu.add(1,21,0,"Jasne");
+            menu.add(1,22,1,"Ciemne");
+            menu.add(1,23,2,"Miało być jaskrawe");
         }
     }
 
@@ -72,15 +76,16 @@ public class FirstActivity extends AppCompatActivity {
                 t1.setAllCaps(true);
                 return true;
             case 21:
-                t2.setAllCaps(false);
-                t2.setText("bye bye world!");
+                t2.setBackgroundColor(getResources().getColor(R.color.white));
+                t2.setTextColor(getResources().getColor(R.color.grey));
                 return true;
             case 22:
-                t2.setAllCaps(false);
-                t2.setText("Bye Bye World!");
+                t2.setBackgroundColor(getResources().getColor(R.color.grey));
+                t2.setTextColor(getResources().getColor(R.color.white));
                 return true;
             case 23:
-                t2.setAllCaps(true);
+                t2.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+                t2.setTextColor(getResources().getColor(R.color.colorAccent));
                 return true;
             default:
                 super.onContextItemSelected(item);

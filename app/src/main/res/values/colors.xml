@@ -6,4 +6,6 @@
     <color name="red">#cc4444</color>
     <color name="green">#44cc44</color>
     <color name="blue">#4444cc</color>
+    <color name="grey">#222</color>
+    <color name="white">#ccc</color>
 </resources>

@@ -15,12 +15,15 @@
         <menu xmlns:android="http://schemas.android.com/apk/res/android">
             <item
                     android:id="@+id/pozycja21"
+                    android:icon="@android:drawable/ic_lock_idle_charging"
                     android:title="Czerwony"/>
             <item
                     android:id="@+id/pozycja22"
+                    android:icon="@android:drawable/ic_input_add"
                     android:title="Zielony"/>
             <item
                     android:id="@+id/pozycja23"
+                    android:icon="@android:drawable/ic_lock_silent_mode"
                     android:title="Niebieski"/>
         </menu>
     </item>
